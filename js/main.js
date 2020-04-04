@@ -5,8 +5,7 @@ $(document).ready(function() {
 
   // creo un ciclo che crea 64 div in pagina
   for (var i = 0; i < 64; i++) {
-    var prevContent = griglia.html();
-    griglia.html(prevContent + "<div class='box'></div>");
+    griglia.append("<div class='box'></div>");
   }
 
   // creo un ciclo che assegna in maniera random la classe red ai quadratini
@@ -37,23 +36,17 @@ $(document).ready(function() {
         if ($(this).hasClass("red")) {
           $(this).addClass("clickedRed")
           punteggioRosso++;
-          console.log("rosso: " + punteggioRosso);
+          // console.log("rosso: " + punteggioRosso);
+          $(".rosso").text(punteggioRosso);
         } else {
           $(this).addClass("clickedGreen")
           punteggioVerde++;
-          console.log("verde: " + punteggioVerde);
+          // console.log("verde: " + punteggioVerde);
+          $(".verde").text(punteggioVerde);
         }
       }
       $(this).addClass("cliccato");
     }
   );
-
-
-
-
-
-
-
-
 
 })
