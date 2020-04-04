@@ -11,7 +11,7 @@ $(document).ready(function() {
   // creo un ciclo che assegna in maniera random la classe red ai quadratini
   for (var j = 15; j > 0; j--) {
     // genero un numero casuale tra 1 e 64
-    var index = Math.floor(Math.random() * 64 + 1);
+    var index = Math.floor(Math.random() * 64);
     // console.log("numero random " + j + ": " + index);
     // seleziono il div con l'indice random corrispondente
     var divSelected = $("#griglia div").eq(index);
