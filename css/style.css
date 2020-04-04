@@ -26,6 +26,9 @@
   border: 1px solid black;
 }
 
-.red {
+.clickedRed {
   background-color: red;
 }
+ .clickedGreen {
+   background-color: green;
+ }
